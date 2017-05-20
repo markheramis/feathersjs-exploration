@@ -17,7 +17,7 @@ const appHooks = require('./app.hooks');
 
 const authentication = require('./authentication');
 
-const database = require('./database');
+const postgres = require('./postgres');
 
 const app = feathers();
 
@@ -35,7 +35,7 @@ app.use('/', feathers.static(app.get('public')));
 
 // Set up Plugins and providers
 app.configure(hooks());
-app.configure(database());
+app.configure(postgres());
 app.configure(rest());
 app.configure(socketio());
 
