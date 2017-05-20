@@ -1,0 +1,20 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "nedb": "../data",
+  "database":{
+    "client":"pg",
+    "version":"8.4",
+    "connection":{
+      "host":"127.0.0.1",
+      "user":"your username",
+      "password":"your password",
+      "database":"your database"
+    }
+  }
+}
